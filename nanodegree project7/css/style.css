@@ -73,7 +73,7 @@ body {
 }
 
 
-@@media only screen and , only screen and (max-width : 950px) {
+@media only screen and , only screen and (max-width : 950px) {
 
 	.app {
 		flex-direction: column;
