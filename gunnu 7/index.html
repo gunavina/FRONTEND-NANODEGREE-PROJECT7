@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ROYAL CITY PATIALA</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="row">
+			<div class="col-md-12">
+			<center><h1><em>ROYAL CITY PATIALA</em></h1></center>
+			</div>
+	</header>
+	<hr>
+	<marquee>Welcome To My HomeTown</marquee>
+  <button class="btn btn-danger navbar-btn">
+		<form class="search-window">
+			<input class="search-box" id="search"  placeholder="Where u want to Visit" data-bind="textInput: searchTerm">
+		</form>
+	</button>
+  <!--<div class="search" id="search">
+		<input class="search-box" id="search-box" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" />
+	</div>-->
+<br>
+	<div class="app" id="app">
+		<div class="list" id="list">
+			<ul class="results" id="results" data-bind="foreach: filteredList">
+				<li class="places" id="places" data-bind="text: name, click: bounce"></li>
+			</ul>
+		</div>
+		<div class="map" id="map">There has been an error loading Google Maps. Please Try Again!!!!</div>
+	</div>
+
+
+	<script src='js/knockout-3.4.2.js'></script>
+	<script src='js/jquery-1.12.2.min.js'></script>
+	<script src='js/app.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVFILza7swQINemam6kSp0j_3YlyFluvE&callback=startApp&libraries=places" onerror="error()"></script>
+</body>
+</html>

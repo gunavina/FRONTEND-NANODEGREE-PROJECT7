@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.search {
+	width: 100%;
+	display: flex;
+}
+
+.search-window{
+			width: 100%;
+}
+
+.search {
+	flex-grow: 1;
+	height: 50px;
+	font-size: 1em;
+	padding: 5px 20px;
+}
+
+.app {
+	display: flex;
+}
+
+.list {
+	background-color: #ADD8E6;
+}
+
+.map {
+	flex-grow: 5;
+	background-color: #3090C7;
+	text-align: center;
+	height: 600px;
+}
+
+.search-box
+{
+
+}
+
+.results {
+	padding: 0;
+}
+
+.places {
+    margin: 5px;
+    padding: 15px;
+    background-color: #3090C7;
+}
